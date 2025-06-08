@@ -415,6 +415,28 @@
     border: 20px solid var(--light);
     background: var(--primary);
     border-radius: 50px;
+}
+
+/*** Health Form ***/
+.health-form .form-group {
+ margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.health-form label {
+ display: block;
+ margin-bottom: 8px;
+ font-weight: bold;
+}
+
+.health-form .form-control,
+.health-form select.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 
