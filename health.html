@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KMPDA - Health Care</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+      <!-- Favicon -->
+      <link href="img/favicon.ico" rel="icon">
+
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Playfair+Display:wght@700;900&amp;display=swap" rel="stylesheet">
+  
+      <!-- Icon Font Stylesheet -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@100..900&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <link href="https://fonts.googleapis.com/css2?family=malayalam&display=swap" rel="stylesheet">
+      
+      <!-- Libraries Stylesheet -->
+      <link href="lib/animate/animate.min.css" rel="stylesheet">
+      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+      <!-- Template Stylesheet -->
+      <link href="css/style.css" rel="stylesheet">
+      
+  </head>
+  
+  <body>
+  
+   
+      <!-- Spinner Start -->
+      <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+          <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+      </div>
+      <!-- Spinner End -->
+  
+      
+      <!-- Navbar Start -->
+      <div class="container-fluid bg-white sticky-top">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                  <a href="index.html" class="navbar-brand">
+                      <img class="img-fluid" src="/img/logo.webp" alt="Logo">
+                  </a>
+                  
+                  
+                  
+                  <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <div class="navbar-nav ms-auto">
+                          
+                          <a href="index.html" class="nav-item nav-link active">Home</a>
+                          <a href="contact.html" class="nav-item nav-link">Contact</a>
+                          <a href="malayalam.html" class="nav-item nav-link">Malayalam</a>
+                         
+                              </div>
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+              </nav>
+          </div>
+      </div>
+      <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-dark mb-4 animated slideInDown">health and care</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">health and care</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl contact py-5">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h2>KMPDA Family Care Policy</h2>
+            </div>
+            
+
+<form id="kmpdaForm" >
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <span id="nameError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="gender">Gender</label>
+        <div class="gender-options">
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female" required> Female</label>
+            <label><input type="radio" name="gender" value="Other" required> Other</label>
+        </div>
+        <span id="genderError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        <span id="dobError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age">
+    </div>
+
+    <div class="form-group">
+        <label for="maritalStatus">Marital Status</label>
+        <select id="maritalStatus" name="maritalStatus">
+            <option value="">Select...</option>
+            <option value="Married">Married</option>
+            <option value="Single">Single</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="permanentAddress">Permanent Address with Pin Code</label>
+        <textarea id="permanentAddress" name="permanentAddress" rows="3" required></textarea>
+        <span id="permanentAddressError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="correspondenceAddress">Correspondence Address</label>
+        <textarea id="correspondenceAddress" name="correspondenceAddress" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Telephone / Mobile Number(s)</label>
+        <input type="text" id="phone" name="phone" required>
+        <span id="phoneError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="idType">Identify Document Type</label>
+        <input type="text" id="idType" name="idType" placeholder="Aadhar card/Passport/Voter ID/Other" required>
+        <span id="idTypeError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="vid">VID Number (Last 4 Digits of Aadhar)</label>
+        <input type="text" id="vid" name="vid" minlength="4" maxlength="4">
+        <span id="vidError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="residentialStatus">Residential Status</label>
+        <select id="residentialStatus" name="residentialStatus" required>
+            <option value="">Select...</option>
+            <option value="Indian">Indian</option>
+            <option value="NRI">NRI</option>
+        </select>
+        <span id="residentialStatusError" class="error"></span>
+    </div>
+
+    <div class="form-group" id="nriCountryGroup" style="display:none;">
+        <label for="nriCountry">NRI Country</label>
+        <input type="text" id="nriCountry" name="nriCountry">
+    </div>
+
+    <div class="form-group">
+        <h3>Nominee Details</h3>
+    </div>
+
+    <div class="form-group">
+        <label for="nomineeName">Nominee Name</label>
+        <input type="text" id="nomineeName" name="nomineeName" required>
+        <span id="nomineeNameError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="nomineeRelationship">Relationship with Proposer</label>
+        <input type="text" id="nomineeRelationship" name="nomineeRelationship" required>
+        <span id="nomineeRelationshipError" class="error"></span>
+    </div>
+
+     <div class="form-group">
+        <label for="nomineeDob">Nominee Date of Birth</label>
+        <input type="date" id="nomineeDob" name="nomineeDob" required>
+        <span id="nomineeDobError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="nomineeIdProof">Nominee ID Proof</label>
+        <input type="text" id="nomineeIdProof" name="nomineeIdProof" required>
+        <span id="nomineeIdProofError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="nomineeAddress">Nominee Address</label>
+        <textarea id="nomineeAddress" name="nomineeAddress" rows="3" required></textarea>
+        <span id="nomineeAddressError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="nomineePhone">Nominee Phone/Mobile Number</label>
+        <input type="text" id="nomineePhone" name="nomineePhone" required>
+        <span id="nomineePhoneError" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="nomineeResidentialStatus">Nominee Residential Status</label>
+        <select id="nomineeResidentialStatus" name="nomineeResidentialStatus" required>
+            <option value="">Select...</option>
+            <option value="Indian">Indian</option>
+            <option value="NRI">NRI</option>
+        </select>
+        <span id="nomineeResidentialStatusError" class="error"></span>
+    </div>
+
+    <div class="form-group" id="nomineeNriCountryGroup" style="display:none;">
+        <label for="nomineeNriCountry">Nominee NRI Country</label>
+        <input type="text" id="nomineeNriCountry" name="nomineeNriCountry">
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+            
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+     <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker text-primary me-3"></i>Reg No: TVM/TC/261/2022
+                        Archana Bhavan                         
+                        Karakkonam Thiruvananthapuram Kerala 
+                         India Pin 695504</p>
+                    <p class="mb-2"><i class="fa fa-phone text-primary me-3"></i>+914712996949 / +918089836949</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>kmpda24@gmail.com</p>
+                    <div class="d-flex pt-3">
+                       
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.youtube.com/@kmpda24"><i class="fab fa-youtube"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">Malayalam</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="https://kmpda24.com/">Home</a>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Copyright Start>
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support.
+                    Designed By <a class="fw-medium" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="fw-medium" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const form = document.getElementById('kmpdaForm');
+    
+        // --- Validation Functions ---
+        function validateName() {
+            const name = document.getElementById('name').value.trim();
+            if (name === '') {
+                document.getElementById('nameError').textContent = 'Name is required';
+                return false;
+            }
+            document.getElementById('nameError').textContent = '';
+            return true;
+        }
+    
+        function validateGender() {
+            const gender = document.querySelector('input[name="gender"]:checked');
+            if (!gender) {
+                document.getElementById('genderError').textContent = 'Gender is required';
+                return false;
+            }
+            document.getElementById('genderError').textContent = '';
+            return true;
+        }
+    
+        function validateDob() {
+            const dob = document.getElementById('dob').value;
+            if (dob === '') {
+                document.getElementById('dobError').textContent = 'Date of Birth is required';
+                return false;
+            }
+            document.getElementById('dobError').textContent = '';
+            return true;
+        }
+    
+        function validatePermanentAddress() {
+            const permanentAddress = document.getElementById('permanentAddress').value.trim();
+            if (permanentAddress === '') {
+                document.getElementById('permanentAddressError').textContent = 'Permanent Address is required';
+                return false;
+            }
+            document.getElementById('permanentAddressError').textContent = '';
+            return true;
+        }
+    
+        function validateEmail() {
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === '') {
+                document.getElementById('emailError').textContent = 'Email is required';
+                return false;
+            }
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Invalid email format';
+                return false;
+            }
+            document.getElementById('emailError').textContent = '';
+            return true;
+        }
+    
+        function validatePhone() {
+            const phone = document.getElementById('phone').value.trim();
+            if (phone === '') {
+                document.getElementById('phoneError').textContent = 'Phone number is required';
+                return false;
+            }
+            document.getElementById('phoneError').textContent = '';
+            return true;
+        }
+    
+        function validateIdType() {
+            const idType = document.getElementById('idType').value.trim();
+            if (idType === '') {
+                document.getElementById('idTypeError').textContent = 'ID Type is required';
+                return false;
+            }
+            document.getElementById('idTypeError').textContent = '';
+            return true;
+        }
+    
+        function validateVid() {
+            const vid = document.getElementById('vid').value.trim();
+            if (vid.length > 0 && vid.length !== 4) {
+                document.getElementById('vidError').textContent = 'VID must be 4 digits';
+                return false;
+            }
+            document.getElementById('vidError').textContent = '';
+            return true;
+        }
+    
+        function validateResidentialStatus() {
+            const residentialStatus = document.getElementById('residentialStatus').value;
+            if (residentialStatus === '') {
+                document.getElementById('residentialStatusError').textContent = 'Residential Status is required';
+                return false;
+            }
+            document.getElementById('residentialStatusError').textContent = '';
+            return true;
+        }
+    
+        function validateNomineeName() {
+            const nomineeName = document.getElementById('nomineeName').value.trim();
+            if (nomineeName === '') {
+                document.getElementById('nomineeNameError').textContent = 'Nominee Name is required';
+                return false;
+            }
+            document.getElementById('nomineeNameError').textContent = '';
+            return true;
+        }
+    
+        function validateNomineeRelationship() {
+            const nomineeRelationship = document.getElementById('nomineeRelationship').value.trim();
+            if (nomineeRelationship === '') {
+                document.getElementById('nomineeRelationshipError').textContent = 'Nominee Relationship is required';
+                return false;
+            }
+            document.getElementById('nomineeRelationshipError').textContent = '';
+            return true;
+        }
+    
+        function validateNomineeDob() {
+            const nomineeDob = document.getElementById('nomineeDob').value;
+            if (nomineeDob === '') {
+                document.getElementById('nomineeDobError').textContent = 'Nominee Date of Birth is required';
+                return false;
+            }
+            document.getElementById('nomineeDobError').textContent = '';
+            return true;
+        }
+    
+        function validateNomineeIdProof() {
+            const nomineeIdProof = document.getElementById('nomineeIdProof').value.trim();
+            if (nomineeIdProof === '') {
+                document.getElementById('nomineeIdProofError').textContent = 'Nominee ID Proof is required';
+                return false;
+            }
+            document.getElementById('nomineeIdProofError').textContent = '';
+            return true;
+        }
+    
+        function validateNomineeAddress() {
+            const nomineeAddress = document.getElementById('nomineeAddress').value.trim();
+            if (nomineeAddress === '') {
+                document.getElementById('nomineeAddressError').textContent = 'Nominee Address is required';
+                return false;
+            }
+            document.getElementById('nomineeAddressError').textContent = '';
+            return true;
+        }
+    
+        function validateNomineePhone() {
+            const nomineePhone = document.getElementById('nomineePhone').value.trim();
+            if (nomineePhone === '') {
+                document.getElementById('nomineePhoneError').textContent = 'Nominee Phone Number is required';
+                return false;
+            }
+            document.getElementById('nomineePhoneError').textContent = '';
+            return true;
+        }
+    
+        function validateNomineeResidentialStatus() {
+            const nomineeResidentialStatus = document.getElementById('nomineeResidentialStatus').value;
+            if (nomineeResidentialStatus === '') {
+                document.getElementById('nomineeResidentialStatusError').textContent = 'Nominee Residential Status is required';
+                return false;
+            }
+            document.getElementById('nomineeResidentialStatusError').textContent = '';
+            return true;
+        }
+    
+        // --- Overall Form Validation ---
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            let isValid = true;
+    
+            isValid = validateName() && isValid;
+            isValid = validateGender() && isValid;
+            isValid = validateDob() && isValid;
+            isValid = validatePermanentAddress() && isValid;
+            isValid = validateEmail() && isValid;
+            isValid = validatePhone() && isValid;
+            isValid = validateIdType() && isValid;
+            isValid = validateVid() && isValid;
+            isValid = validateResidentialStatus() && isValid;
+    
+            isValid = validateNomineeName() && isValid;
+            isValid = validateNomineeRelationship() && isValid;
+            isValid = validateNomineeDob() && isValid;
+            isValid = validateNomineeIdProof() && isValid;
+            isValid = validateNomineeAddress() && isValid;
+            isValid = validateNomineePhone() && isValid;
+            isValid = validateNomineeResidentialStatus() && isValid;
+    
+            if (isValid) {
+                sendEmail(); // Prepare and "send" the data
+            }
+        });
+    
+        // ---  Conditional Display for NRI Country ---
+        const residentialStatus = document.getElementById('residentialStatus');
+        const nriCountryGroup = document.getElementById('nriCountryGroup');
+    
+        residentialStatus.addEventListener('change', function() {
+            nriCountryGroup.style.display = this.value === 'NRI' ? 'block' : 'none';
+        });
+    
+        const nomineeResidentialStatus = document.getElementById('nomineeResidentialStatus');
+        const nomineeNriCountryGroup = document.getElementById('nomineeNriCountryGroup');
+    
+        nomineeResidentialStatus.addEventListener('change', function() {
+            nomineeNriCountryGroup.style.display = this.value === 'NRI' ? 'block' : 'none';
+        });
+    
+        // ---  Send Email (PREPARE DATA - NEEDS SERVER-SIDE SCRIPT) ---
+        function sendEmail() {
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+    
+            const jsonData = JSON.stringify(data);
+    
+            console.log("Form Data (JSON):", jsonData);
+    
+            // *** IMPORTANT:  AJAX call to your server-side script ***
+            // Example using fetch API (replace with your server endpoint)
+            fetch('healthSend.php', {  // Change to your actual server endpoint
+                method: 'POST',
+                body: jsonData,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.text())
+            .then(result => {
+                alert('Form submitted successfully!');  // Handle success (e.g., show a thank you message)
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error submitting form. Please try again.'); // Handle error
+            });
+        }
+    
+    </script>
+</body>
+
+</html>
